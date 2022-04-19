@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sintaxis y Selectores CSS, Interacción Humano Ordenador</title>
+    <LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<body>
+    <div class="menu-area">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Temas</a>
+                <ul class="dropdown-1">
+                    <li><a href="tema-uno.html">Sintaxis y Selectores CSS</a></li>
+                    <li><a href="tema-dos.html">Interacción Humano Ordenador</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Recursos Digitales</a>
+                <ul class="dropdown-1">
+                    <li><a href="recurso-uno.html">Recurso 1</a></li>
+                    <li><a href="recurso-dos.html">Recurso 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Aprendizaje</a>
+                <ul class="dropdown-1">
+                    <li><a href="#">Actividad 1</a></li>
+                    <li><a href="#">Actividad 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Acerca de</a>
+                <ul class="dropdown-1">
+                    <li><a href="autor.html">Autor</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="banner-area">
+        <h1>Sintaxis y Selectores CSS</h1>
+    </div>
+
+
+    <div class="flex-container">
+        <section id="cuerpo" class="item">
+            <article>
+            <h3>Sintaxis CSS</h3>
+            <p>Un conjunto de reglas CSS consta de un selector y un bloque de declaración:</p>
+            <img src="css.png" width="500px" alt="">
+            <p>Los puntos selectores para el elemento HTML que desea estilo.</p>
+            <p>El bloque de declaración contiene una o más declaraciones separadas por punto y coma.</p>
+            <p>Cada declaración incluye un nombre de propiedad CSS y un valor, separados por dos puntos.</p>
+            <p>Una declaración CSS siempre termina con un punto y coma, y los bloques de declaraciones están rodeados por llaves.</p>
+            <p>En el siguiente ejemplo todos <p> elementos serán alineados-centro, con un color rojo texto:</p>
+            <h4>Ejemplo</h4>
+            <pre><code>
+                p {color: red;
+                    text-align: center;)                
+            </code></pre>
+        </article>
+        <article>
+            <h3>Los selectores CSS</h3>
+            <p>Selectores CSS se utilizan para "find" (o seleccionar) elementos HTML en función de su nombre de elemento, de la identificación, clase, atributo, y mucho más.</p>
+            <h4>El selector de elemento</h4>
+            <p>El selector de elementos selecciona elementos basados en el nombre del elemento.</p>
+            <p>Puede seleccionar todos los <p> elementos en una página como esta (en este caso, todos los <p> elementos serán alineados-centro, con un color rojo texto):</p>
+            <h4>Ejemplo</h4>
+            <pre><code>
+                p {text-align: center;
+                    color: red;}                              
+            </code></pre>
+            <h4>El selector de ID</h4>
+            <p>El selector de ID utiliza el atributo id de un elemento HTML para seleccionar un elemento específico.</p>
+            <p>La identificación de un elemento debe ser único dentro de una página, por lo que el selector de ID se utiliza para seleccionar un elemento único.</p>
+            <p>Para seleccionar un elemento con un ID específico, escribe un carácter almohadilla (#), seguido por el id del elemento.</p>
+            <p>La regla de estilo a continuación se aplica al elemento HTML con id="para1":</p>
+            <h4>Ejemplo</h4>
+            <pre><code>
+                #para1 {text-align: center;
+                    color: red;}                                            
+            </code></pre>
+            <h4>El selector de clase</h4>
+            <p>El selector de clase selecciona los elementos con un atributo de clase específica.</p>
+            <p>Para seleccionar elementos con una clase específica, escribe un periodo (.) Carácter, seguido del nombre de la clase.</p>
+            <p>En el siguiente ejemplo, todos los elementos HTML con class="center" será de color rojo y alineado al centro:</p>
+            <h4>Ejemplo</h4>
+            <pre><code>
+                .center {text-align: center;
+                    color: red;}                                                          
+            </code></pre>
+            <p>También puede especificar que los elementos HTML específicos solamente deben verse afectadas por una clase.</p>
+            <p>En el siguiente ejemplo, solamente <p> elementos con class="center" estarán alineados-centro:</p>
+            <h4>Ejemplo</h4>
+            <pre><code>
+                p.center {text-align: center;
+                    color: red;}                                                                       
+            </code></pre>
+            <p>Elementos HTML también puede referirse a más de una clase.</p>
+            <p>En el siguiente ejemplo, el <p> elemento se diseñó de acuerdo a class="center" y para class="large" :</p>
+            <h4>Ejemplo</h4>
+            <pre><code>
+                <p class="center large">This paragraph refers to two classes.</p>                                                                     
+            </code></pre>
+
+            <h4>CSS Comentarios</h4>
+            <p>Los comentarios se utilizan para explicar el código, y pueden ayudar al editar el código fuente en una fecha posterior.</p>
+            <p>Los comentarios son ignorados por los navegadores.</p>
+            <p>Un comentario CSS comienza con /* and ends with */. Los comentarios también pueden abarcar varias líneas:</p>
+            <h4>Ejemplo</h4>
+            <pre><code>
+                p {color: red;
+                    /* This is a single-line comment */
+                    text-align: center;}
+                
+                /* This is
+                a multi-line
+                comment */                
+            </code></pre>
+        </article>
+        <a href="http://www.w3bai.com/es/css/css_syntax.html">http://www.w3bai.com/es/css/css_syntax.html</a>
+        </section>
+        <!--<aside class="item">Aside</aside>-->
+        <footer class="item">
+            <div class="flex-container">
+                <div class="item">Correo: jleonardo1091@gmail.com</div>
+            <div class="item">Skype: jorgelopeza10@hotmail.com</div>
+            <div class="item">Fecha: Marzo 2022</div>
+            </div>
+            
+        </footer>
+    </div>
+</body>
+
+</html>
